@@ -1,0 +1,85 @@
+html, body
+{
+    height: 100%;
+}
+.nav {
+	background-color: #f0f0f0;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid #bbbbbb;
+	z-index: 5;
+}
+.nav .container {
+	margin-top: 10px;
+}
+.nav a {
+	color: #CC0000;
+	font-size: 14px;
+	font-weight: bold;
+	padding-right: 20px;
+}
+.nav li {
+	display:inline;
+}
+
+.carousel {
+	top: 40px;
+	position: relative;
+  	width: 100%;
+  	height: auto;
+  	padding-bottom: 45px;
+  	clear:both;
+ }
+
+.slide {
+	/*background: transparent url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/feature-gradient-transparent.png') center center no-repeat;*/
+  	/*background-size: cover;*/
+	position: absolute;
+  	display:none;
+  	top: 0;
+  	left: 0;
+	width: 100%;
+  	height: 100%;
+}
+
+.active-slide {
+    display: block;
+}
+
+.img-scale {
+	margin-top:10px;
+	outline: 0;
+	max-width: 100%;
+	height: auto;
+	margin-bottom:10px;
+}
+
+.slider-nav {
+	position: relative;
+	margin-top:52%;
+	text-align: center;
+	top:2px;
+}
+
+.bullet {
+	position: relative;
+	top:2px;
+	margin-left: 6px;
+	margin-right: 6px;
+	display: inline-block;
+	background-color:black;
+	border: 1px solid #eeeeee;
+	border-radius: 10%;
+	height: 12px;
+	width: 12px;
+	opacity: 0.4;
+}
+.active-bullet {
+	opacity: 0.65;
+	background-color:#eeeeee;
+}
+.footer {
+	border-top: 1px solid #bbbbbb;
+	margin-top: 40px;
+	background-color: #f0f0f0;
+}
