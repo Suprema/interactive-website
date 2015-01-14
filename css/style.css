@@ -2,6 +2,13 @@ html, body
 {
     height: 100%;
 }
+
+body {
+  /*left: 200px;*/
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
 .nav {
 	background-color: #f0f0f0;
 	position: fixed;
@@ -11,6 +18,7 @@ html, body
 }
 .nav .container {
 	margin-top: 10px;
+	margin-left:0px;
 }
 .nav a {
 	color: #CC0000;
@@ -18,10 +26,49 @@ html, body
 	font-weight: bold;
 	padding-right: 20px;
 }
+
+.icon-menu {
+	cursor: pointer;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.nav ul {
+	left:-50px;
+}
 .nav li {
 	display:inline;
 }
+.nav i{
+	padding-right: 10px;
+}
 
+.menu {
+	left:-100px;
+	position: fixed;
+	background-color: #f0f0f0;
+	width: 100px;
+	height: 100%;
+	clear:both;
+	padding-top: 13px;
+	border-top: 1px solid #bbbbbb;
+	border-right: 1px solid #bbbbbb;
+}
+.menu ul {
+	margin-left:-40px;
+	list-style: none;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.menu li {
+	padding-bottom: 15px;
+}
+
+.menu a {
+	color:black;
+}
 .carousel {
 	top: 40px;
 	position: relative;

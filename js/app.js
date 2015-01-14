@@ -27,6 +27,18 @@ function main() {
         currentDot.removeClass('active-bullet');
         prevDot.addClass('active-bullet');
     });
+    var iconMenuClose=true;
+    $('.icon-menu').click(function() {
+        if(iconMenuClose){
+            iconMenuClose=false;
+            $(".menu").animate({"left":"0px"},500);
+            $("body").animate({left:"100px"},500);
+        } else {
+            iconMenuClose=true;
+            $(".menu").animate({"left":"-100px"},500);
+            $("body").animate({left:"0px"},500);
+        }
+    });
 }
 
 $(document).ready(main);
